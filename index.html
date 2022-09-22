@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masood's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/6629a3f92b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- nav start  -->
+    <div class="header bg-teal-300">
+      <nav
+        class="bg-white p-3 px-5 md:flex md:items-center md:justify-between md:px-16"
+      >
+        <div class="left-nav flex items-center justify-between">
+          <h2 class="cursor-pointer text-left text-xl hover:text-teal-300">
+            Masood Ahmed
+          </h2>
+          <i
+            class="fa-solid fa-bars text-xl cursor-pointer hover:text-sky-300 md:hidden"
+          ></i>
+        </div>
+        <!-- mobile view nav -->
+        <!-- <div class="right-nav mt-10 w-full text-center md:hidden">
+          <ul class=" ">
+            <li class="cursor-pointer hover:bg-sky-300">About</li>
+            <li class="cursor-pointer hover:bg-sky-300">Skills</li>
+            <li class="cursor-pointer hover:bg-sky-300">Projects</li>
+          </ul>
+        </div> -->
+        <!-- mobile view nav end-->
+
+        <div class="right-nav-responsive hidden md:inline-flex">
+          <ul class="md:flex md:space-x-5">
+            <a href="#about" class="cursor-pointer hover:text-teal-300"
+              >About</a
+            >
+            <a href="#skills" class="cursor-pointer hover:text-teal-300"
+              >Skills</a
+            >
+            <a href="#projects" class="cursor-pointer hover:text-teal-300"
+              >Projects</a
+            >
+          </ul>
+        </div>
+      </nav>
+
+      <div class="hero md:flex md:justify-between md:items-center md:px-16">
+        <div class="left-hero p-3 text-left pt-20 text-center md:text-left">
+          <h3 class="font-semibold text-3xl lg:text-4xl">Masood Ahmed</h3>
+          <p class="lg:text-lg">I am a Front-End Developer</p>
+          <div
+            class="social-logo flex space-x-3 pt-3 justify-center md:justify-start"
+          >
+            <a href="https://twitter.com/masoodahmed_a" target="_blank">
+              <i
+                class="fa-brands fa-twitter text-xl lg:text-2xl cursor-pointer hover:text-cyan-400"
+              ></i
+            ></a>
+            <a href="https://github.com/masoodahmed-a" target="_blank">
+              <i
+                class="fa-brands fa-github text-xl lg:text-2xl cursor-pointer hover:text-black-900"
+              ></i
+            ></a>
+            <a href="#" target="_blank">
+              <i
+                class="fa-brands fa-linkedin-in text-xl lg:text-2xl cursor-pointer hover:text-sky-800"
+              ></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="right-hero -mt-20">
+          <img src="img/img.png" alt="" class="ml-auto md:ml-0" />
+        </div>
+      </div>
+    </div>
+    <!-- nav end  -->
+
+    <!-- about start -->
+    <section
+      class="about p-3 px-5 md:px-16 mt-10 mb-10 lg:mt-20 lg:mb-20"
+      id="about"
+    >
+      <h3 class="text-2xl lg:text-4xl font-medium pb-5 text-teal-300">
+        About Me
+      </h3>
+      <p class="leading-loose md:leading-10 md:text-lg">
+        I have completed my BCA graduation from A.M.Jain College in Chennai,
+        India. After my college completion I have started to learn web
+        developemnt so I have joined a challenge in twitter as #100daysofcode in
+        that I have learned so much about web development using this I have
+        build projects like Starbucks clone, Microsoft clone, Weather App &
+        more. I have attached some of my project below.
+      </p>
+    </section>
+    <!-- about end  -->
+
+    <!-- skills -->
+    <section
+      class="skills p-3 bg-gray-100 px-5 md:px-16 pt-10 pb-10 md:pt-20 md:pb-20"
+      id="skills"
+    >
+      <h3
+        class="text-2xl md:text-3xl lg:text-4xl font-medium pb-16 text-teal-300"
+      >
+        Skills
+      </h3>
+      <div
+        class="logo flex flex-col md:flex-row md:justify-evenly items-center space-y-5 md:space-y-0"
+      >
+        <i
+          class="fa-brands fa-html5 text-orange-500 text-6xl sm:text-5xl md:text-6xl cursor-pointer"
+        ></i>
+        <i
+          class="fa-brands fa-css3-alt text-blue-700 text-6xl sm:text-5xl md:text-6xl cursor-pointer"
+        ></i>
+        <i
+          class="fa-brands fa-square-js text-yellow-400 text-6xl sm:text-5xl md:text-6xl cursor-pointer"
+        ></i>
+        <i
+          class="fa-brands fa-vuejs text-green-600 text-6xl sm:text-5xl md:text-6xl cursor-pointer"
+        ></i>
+        <img
+          src="tailwind-logo.png"
+          class="w-20 sm:w-16 cursor-pointer"
+          alt=""
+        />
+      </div>
+    </section>
+    <!-- skills end  -->
+
+    <!-- project -->
+    <section
+      class="project p-3 bg-black md:px-10 pt-10 pb-10 md:pt-20 md:pb-20"
+      id="project"
+    >
+      <h3
+        class="text-2xl md:text-3xl lg:text-4xl font-medium pb-16 text-teal-300"
+      >
+        Projects
+      </h3>
+      <div class="projects-demo md:grid md:grid-rows-2 md:grid-cols-3 md:gap-3">
+        <div class="project-one mb-5 p-5 bg-white rounded-md">
+          <img src="img/start-bucks.png" alt="" class="rounded-lg pb-3" />
+          <h3 class="text-xl font-medium pb-3">Star Bucks Clone</h3>
+          <p class="pb-3">I have tried to clone the whole Star Bucks Website</p>
+          <div class="button">
+            <button
+              class="bg-red-500 hover:bg-red-600 text-white p-2 rounded-md"
+            >
+              <a
+                href="https://github.com/masoodahmed-a/Starbucks-Responsive.git"
+                target="_blank"
+                >Source Code</a
+              >
+            </button>
+            <button
+              class="bg-green-500 hover:bg-green-600 text-white p-2 rounded-md"
+            >
+              <a
+                href="https://masoodahmed-a.github.io/Starbucks-Responsive/"
+                target="_blank"
+                >Live Demo</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <div class="project-two mb-5 p-5 bg-white rounded-md">
+          <img src="img/microsoft.png" alt="" class="rounded-lg pb-3" />
+          <h3 class="text-xl font-medium pb-3">Microsoft Clone</h3>
+          <p class="pb-3">I have tried to clone the whole Star Bucks Website</p>
+          <div class="button">
+            <button
+              class="bg-red-500 hover:bg-red-600 text-white p-2 rounded-md"
+            >
+              <a
+                href="https://github.com/masoodahmed-a/Microsoft-Clone.git"
+                target="_blank"
+                >Source Code</a
+              >
+            </button>
+            <button
+              class="bg-green-500 hover:bg-green-600 text-white p-2 rounded-md"
+            >
+              <a
+                href="https://masoodahmed-a.github.io/Microsoft-Clone/"
+                target="_blank"
+                >Live Demo</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <div class="project-three mb-5 p-5 bg-white rounded-md">
+          <img src="img/Tip.png" alt="" class="rounded-lg pb-3" />
+          <h3 class="text-xl font-medium pb-3">Microsoft Clone</h3>
+          <p class="pb-3">I have tried to clone the whole Star Bucks Website</p>
+          <div class="button">
+            <button
+              class="bg-red-500 hover:bg-red-600 text-white p-2 rounded-md"
+            >
+              <a
+                href="https://github.com/masoodahmed-a/Microsoft-Clone.git"
+                target="_blank"
+                >Source Code</a
+              >
+            </button>
+            <button
+              class="bg-green-500 hover:bg-green-600 text-white p-2 rounded-md"
+            >
+              <a
+                href="https://masoodahmed-a.github.io/Microsoft-Clone/"
+                target="_blank"
+                >Live Demo</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <div class="project-four mb-5 p-5 bg-white rounded-md">
+          <img src="img/todo.png" alt="" class="rounded-lg pb-3" />
+          <h3 class="text-xl font-medium pb-3">Microsoft Clone</h3>
+          <p class="pb-3">I have tried to clone the whole Star Bucks Website</p>
+          <div class="button">
+            <button
+              class="bg-red-500 hover:bg-red-600 text-white p-2 rounded-md"
+            >
+              <a
+                href="https://github.com/masoodahmed-a/Microsoft-Clone.git"
+                target="_blank"
+                >Source Code</a
+              >
+            </button>
+            <button
+              class="bg-green-500 hover:bg-green-600 text-white p-2 rounded-md"
+            >
+              <a
+                href="https://masoodahmed-a.github.io/Microsoft-Clone/"
+                target="_blank"
+                >Live Demo</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <div class="project-five mb-5 p-5 bg-white rounded-md">
+          <img src="img/weather.png" alt="" class="rounded-lg pb-3" />
+          <h3 class="text-xl font-medium pb-3">Microsoft Clone</h3>
+          <p class="pb-3">I have tried to clone the whole Star Bucks Website</p>
+          <div class="button">
+            <button
+              class="bg-red-500 hover:bg-red-600 text-white p-2 rounded-md"
+            >
+              <a
+                href="https://github.com/masoodahmed-a/Microsoft-Clone.git"
+                target="_blank"
+                >Source Code</a
+              >
+            </button>
+            <button
+              class="bg-green-500 hover:bg-green-600 text-white p-2 rounded-md"
+            >
+              <a
+                href="https://masoodahmed-a.github.io/Microsoft-Clone/"
+                target="_blank"
+                >Live Demo</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <div class="project-six mb-5 p-5 bg-white rounded-md">
+          <img src="img/weather.png" alt="" class="rounded-lg pb-3" />
+          <h3 class="text-xl font-medium pb-3">Microsoft Clone</h3>
+          <p class="pb-3">I have tried to clone the whole Star Bucks Website</p>
+          <div class="button">
+            <button
+              class="bg-red-500 hover:bg-red-600 text-white p-2 rounded-md"
+            >
+              <a
+                href="https://github.com/masoodahmed-a/Microsoft-Clone.git"
+                target="_blank"
+                >Source Code</a
+              >
+            </button>
+            <button
+              class="bg-green-500 hover:bg-green-600 text-white p-2 rounded-md"
+            >
+              <a
+                href="https://masoodahmed-a.github.io/Microsoft-Clone/"
+                target="_blank"
+                >Live Demo</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- proeject end  -->
+
+    <!-- footer -->
+  </body>
+</html>
